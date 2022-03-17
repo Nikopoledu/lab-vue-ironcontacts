@@ -8,7 +8,7 @@ console.log(myContacts)
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <div v-for="contact in myContacts" v-bind:key="contact">{{ contact.name}}</div>
+  <div v-for="contact in myContacts">{{ contact.name}}</div>
   <HelloWorld msg="Hello Vue 3 + Vite" />
 </template>
 
@@ -20,14 +20,5 @@ console.log(myContacts)
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-
-table {
-   width: 100%;
-}
-th, td {
-   width: 25%;
-   text-align: left;
-   vertical-align: top;
 }
 </style>
