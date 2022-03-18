@@ -9,6 +9,7 @@ console.log(myContacts)
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <table v-for="contact in myContacts" v-bind:key="contact">
+    <td><img  :src="contact.pictureUrl" style="width:60px;" alt=""></td>
     <td>{{ contact.name}}</td>
     <td>{{ contact.popularity}}</td>
     
